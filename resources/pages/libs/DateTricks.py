@@ -10,7 +10,7 @@ class DateTricks():
         fdate = today.strftime('%m%d%Y')
         print(fdate)
 
-        a_chars = ['1', '1', '1', '7', '2', '0', '2', '2']
+        a_chars = []
 
         for number in fdate:
             a_chars.append(number)
