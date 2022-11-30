@@ -7,6 +7,8 @@ Resource    pages/login.resource
 Resource    pages/enroll.resource
 Resource    database.resource
 
+Library    JSONLibrary
+
 *** Keywords ***
 #Helpers
 Do Login
@@ -20,7 +22,7 @@ Do Login
 Get Fixture
     [Arguments]    ${fixture_file}
     
-    ${fixture}        Load Json From File
+    ${fixture}        Load JSON From File
     ...               ${EXECDIR}/resources/fixtures/${fixture_file}.json
     ...               encoding=UTF-8
 

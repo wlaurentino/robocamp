@@ -5,14 +5,14 @@ Documentation        Suite de testes de matricula de alunos
 
 Resource    ../resources/base.resource
 
-Library    JSONLibrary
 
+# Comando de Execução do Testes no terminal
+# robot -d ./logs tests/
 
 *** Test Cases ***
 Deve matricular um aluno
 
     ${admin}      Get Fixture    admin
-
     ${student}    Get Fixture    student
 
     Reset Student Enroll        ${student}[email]

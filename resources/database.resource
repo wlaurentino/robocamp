@@ -39,6 +39,7 @@ Delete Enroll By Email
 # Helpers
 Reset Student Enroll
     [Arguments]                   ${email} 
+    
     Connect To Postgres
     Delete Enroll By Email        ${email}
     Disconnect From Database
