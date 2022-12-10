@@ -5,10 +5,10 @@ Library    Browser
 *** Keywords ***
 
 Fill Credentials
-    [Arguments]     ${email}        ${pass}
+    [Arguments]     ${email}        ${password}
     
     Fill Text       css=input[name=email]            ${email}
-    Fill Text       css=input[name=password]         ${pass}
+    Fill Text       css=input[name=password]         ${password}
 
 Submit Credentials
 

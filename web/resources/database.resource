@@ -36,10 +36,18 @@ Delete Enroll By Email
 
     Execute Sql String        ${query}
 
+Delete Student By Email
+    [Arguments]        ${email}
+
+    ${query}        Set Variable
+    ...             delete from public.students where email = '${email}';   
+
+    Execute Sql String    ${query}
+
 # Helpers
-Reset Student Enroll
+Reset Student
     [Arguments]                   ${email} 
     
     Connect To Postgres
-    Delete Enroll By Email        ${email}
+    Delete Student By Email        ${email}
     Disconnect From Database
