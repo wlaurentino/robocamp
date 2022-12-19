@@ -1,0 +1,13 @@
+{
+    "student": {
+        "feet_tall": 1.80,
+        "weight": 84,
+        "age": 34,
+        "email": "wlaurentino@aluno.com.br",
+        "name": "William Laurentino"
+    },
+    "enroll": {
+        "plan": "Smart"
+    },
+    "question": "Como faço para perder massa gorda?"
+}
